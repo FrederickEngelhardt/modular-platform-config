@@ -13,24 +13,22 @@ alias git-prune-remove="git branch --list --format \"%(if:equals=[gone])%(upstre
 alias gcan="git commit --amend --no-edit"
 
 # Quick swap between git commit emails
+# TODO swap to JS/TS and make config get stored in a JSON object
+# Passing the parameter of example_company will set the user email to a different email address
 gconfig(){
-  git config user.name "Frederick Engelhardt";
+  git config user.name $GIT_GLOBAL_USER;
   case $1 in
-    virtualize)
-      git config user.email "fre@virtualizellc.com";
+    example_company)
+      git config user.email ${GIT_GLOBAL_USER_COMPANY_EMAIL};
     ;;
     *)
-      git config user.email "fre@virtualizellc.com";
+      git config user.email $GIT_GLOBAL_USER_PERSONAL_EMAIL;
     ;;
   esac
   echo "Config: $1, Setting git configuration is now email: $(git config user.email) and name: $(git config user.name)";
 }
 
-if command -v git-up &> /dev/null;
-  then
-    alias gu="git-up";
-fi
-
+# Pushes to all remotes with the current branch name and passes arguments through
 gpa(){
   for i in "${GIT_GPA_REMOTES[@]}"
   do

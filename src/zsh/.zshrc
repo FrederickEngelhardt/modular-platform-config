@@ -11,6 +11,7 @@
 # path must use HOME path for constants/paths.zsh
 source "$HOME/.modular-platform-config/src/zsh/constants/paths.zsh"
 source "$MPC_ZSH_CONSTANTS/versions.zsh"
+source "$MPC_ZSH_CONSTANTS/user-variables.zsh"
 
 # init file (optional)
     # NOTE useful for adding a bunch of __local__ config files

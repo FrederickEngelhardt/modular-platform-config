@@ -66,21 +66,6 @@ npm run zshrc:symlink; # only run on initial setup
 
 \_Scripts require `chmod +x <script path>` to be allowed to execute
 
-- Xpedite
-  - **M** will take you to root directory of xpedite
-  - **rs** will run the server in developer mode
-
-## Quality of Life Software
-
-- Note Taking: [notion](https://www.notion.so/)
-- Time Tracking: [toggle](https://toggl.com/)
-- Network Tracking: [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html)
-- Window Management: [spectacle](https://www.spectacleapp.com/)
-- Copy/Paste history: [CopyClip](https://apps.apple.com/us/app/copyclip-clipboard-history/id595191960?mt=12)
-- Notification Filtering for embarassing Screenshares: [muzzle](https://muzzleapp.com/)
-- Screenshotting/Drawing/Annotating: [skitch](https://evernote.com/products/skitch)
-- Wireframing: [Sketch](https://www.sketch.com/)
-
 ## Windows fix for docksal
 
 Go [here](./docs/wsl-docksal.md)

@@ -1,5 +1,15 @@
 # WSL Docksal Fix
 
+This document is deprecated/unmaintained but may still be applicable for react-native + WSL + dev server proxying.
+
+You will need to know networking and how windows and WSL connect to do this properly. 
+
+The info below is mostly copy pasted from other online resources and tutorials and combined together. 
+
+Last updates: `~2020`.
+
+## Steps
+
 Edit using admin rights `C:\Windows\System32\drivers\etc`
 //powershell
 ```ps1

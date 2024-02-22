@@ -7,8 +7,8 @@
       {
         "rule": "shell",
         "command": "git config user.email",
-        "match": "^(.*?@virtualizellc.com)",
-        "error": "Expected your email to end with @virtualizellc.com"
+        "match": "^(.*?@.*..*)",
+        "error": "Expected a commit to have an email address"
       }
     ],
     "Node": {
@@ -18,7 +18,7 @@
         "macos",
         "linux"
       ],
-      "semver": "16.x",
+      "semver": "20.x",
       "ci": true,
       "fix": "fnm use"
     }

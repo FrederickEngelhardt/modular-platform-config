@@ -3,6 +3,7 @@
 src/zsh/constructors/__local__*.zsh
 src/zsh/constructors/init.zsh
 src/zsh/constructors/final.zsh
+src/zsh/constants/*.local.zsh
 
 __generated__*.{zsh,sh}
 

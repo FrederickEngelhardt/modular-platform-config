@@ -16,9 +16,14 @@ Fork and clone if you need to customize this. Otherwise open to PRs if the chang
 
 ## What this does
 
-- Manages your entire zsh environment with one repo
-- Allows users to scale out their config
+- Manages your entire [zsh](https://en.wikipedia.org/wiki/Z_shell) environment with one repo.
+- Allows users to save their config and share it across multiple computers and platforms
 - Provides a few example scripts.
+- Apps
+  - Organizes app configs under the apps. (e.g)
+    -  Iterm2 presets.
+    -  Android studio settings
+    - 
 - Installs
   - Homebrew
   - oh-my-zsh
@@ -50,34 +55,15 @@ MacOS has the most support as this is my main workflow.
   - You should see a color shell window and the should be no path errors or link problems or messages about directories not existing.
 1. If not, make sure you fix any missing packages or remove conflicting files. Also submit a bug report if this problem is on latest release.
 
-## Recommended Apps to Install
+## Recommended Apps 
 
-Install these manually. Typically latest version is ideal. Most of these apps relate to software development, design, productivity, and security. 
+### MacOS
 
-**Everyone** can benefit from productivity modules...your workflows should speedup significantly.
+Please go to [this document](docs/recommended-apps-macos.md) for more details
 
-The security options are not focused about total solutions like disc scanning, but solutions that prevent spyware and extensive tracking from services.
+### Windows 11
 
-### IDEs and Terminal for Mac
-
-- [Iterm2](https://iterm2.com/downloads.html). Way better than mac osx terminal
-- [Xcode](https://developer.apple.com/download/all/?q=xcode%20command)
-- [VSCode](https://code.visualstudio.com/)
-- [Android Studio](https://developer.android.com/studio)
-
-### Productivity (move windows with hotkeys)
-
-  - [Rectangle](https://rectangleapp.com/) Free but there is a paid version
-  - [Copy Clip 2](https://apps.apple.com/us/app/copyclip-2-clipboard-manager/id1020812363?mt=12) PAID but there is a free version
-
-### Design
-  - [Miro](https://miro.com/) great for brainstorming. Sketch can do this well too.
-  - [Sketch](https://www.sketch.com/) PAID. Design tool makes it very easy to create mockups and vector/raster image assets.
-
-### Networking & Security
-
-- [Little Snitch](https://www.obdev.at/products/littlesnitch/download.html) Paid
-
+Please go to [this document](docs/recommended-apps-windows.md) for more details
 
 ## Contributing
 
