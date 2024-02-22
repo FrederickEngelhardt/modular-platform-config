@@ -64,7 +64,6 @@ Fork and clone if you need to customize this. Otherwise open to PRs if the chang
 
 MacOS has the most support as this is my main workflow.
 
-
 ## Getting Started
 
 1. Fork and clone the repo. You may need to change code

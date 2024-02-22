@@ -1,0 +1,7 @@
+# default branch should be main
+[init]
+	defaultBranch = main
+  
+# For avoiding having to pass --set-upstream origin <branch>
+[push]
+    autoSetupRemote = true
