@@ -14,17 +14,13 @@ source $MPC_CONFIG/src/setup/install-rbenv.zsh
 # Git
 source $MPC_CONFIG/src/setup/git.zsh
 
-if ! [ $(command -v perl) ]; then
-  brew install perl
-fi
-
 # FNM install
 # Its 40x faster than NVM
 # https://github.com/Schniz/fnm
 if ! [ $(command -v fnm) ]; then
   curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir $HOME/.fnm --skip-shell
   eval "$(fnm env)"
-  fnm install ${DEFAULT_NODE_VERSION:-18}
+  fnm install ${DEFAULT_NODE_VERSION:-20}
 fi
 
 # nvm install
