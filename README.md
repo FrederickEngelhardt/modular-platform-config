@@ -77,6 +77,17 @@ MacOS has the most support as this is my main workflow.
     - You should see a color shell window and the should be no path errors or link problems or messages about directories not existing.
 1. If not, make sure you fix any missing packages or remove conflicting files. Also submit a bug report if this problem is on latest release.
 
+## Updating / Sync latest fixes
+
+To auto-update please run the command `./run-sync.zsh` under the repo. Eventually there could be a simple cli to run this and other helper methods.
+
+- `run-sync.zsh` syncs the latest tag branch but will not update beyond the major version.
+  - to sync with `main` instead of latest major version of the cli,. Please use the following command and arguments `false main`
+
+    ```zsh
+    run-sync.zsh false main
+    ```
+
 ## Recommended Apps
 
 ### MacOS
