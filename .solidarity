@@ -1,0 +1,26 @@
+{
+  "config": {
+    "output": "verbose"
+  },
+  "requirements": {
+    "Git email": [
+      {
+        "rule": "shell",
+        "command": "git config user.email",
+        "match": "^(.*?@virtualizellc.com)",
+        "error": "Expected your email to end with @virtualizellc.com"
+      }
+    ],
+    "Node": {
+      "rule": "cli",
+      "binary": "node",
+      "platform": [
+        "macos",
+        "linux"
+      ],
+      "semver": "16.x",
+      "ci": true,
+      "fix": "fnm use"
+    }
+  }
+}

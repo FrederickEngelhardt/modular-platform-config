@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+export MPC_CONFIG=$HOME/.modular-platform-config
+export MPC_CONFIG_LIBS=$HOME/.modular-platform-config/libs
+export MCP_ZSH_CONSTRUCTORS=$MPC_CONFIG/src/zsh/constructors
+export MPC_ZSH_PLUGINS=$MPC_CONFIG/src/zsh/plugins
+export MPC_ZSH_CONSTANTS=$MPC_CONFIG/src/zsh/constants
+export MPC_CONFIG_APPS=$MPC_CONFIG/src/apps
+export MPC_CONFIG_VERBOSE=false
+export MPC_OH_MY_ZSH_DIR=$MPC_CONFIG_LIBS/.oh-my-zsh
+export MPC_ZSHRC=$MPC_CONFIG/src/zsh/.zshrc

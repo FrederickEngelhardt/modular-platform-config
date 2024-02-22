@@ -1,0 +1,63 @@
+# DIRENV
+.envrc
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Compiled Python files
+*.pyc
+
+# Compiled C++ files
+*.out
+
+# Application specific files
+venv
+node_modules
+.sass-cache
+
+# IDe
+.idea
+.vscode
+
+
+# android-next assets
+app/src/main/assets/raw/
+
+# app/src/main/res/drawable-mdpi
+app/src/main/res/drawable-mdpi/__node_modules*
+app/src/main/res/drawable-mdpi/__components*
+app/src/main/res/drawable-mdpi/components_*
+app/src/main/res/drawable-mdpi/node_modules_*
+
+# app/src/main/res/drawable-hdpi
+app/src/main/res/drawable-hdpi/__node_modules*
+app/src/main/res/drawable-hdpi/__components*
+app/src/main/res/drawable-hdpi/components_*
+app/src/main/res/drawable-hdpi/node_modules_*
+
+# app/src/main/res/drawable-xhdpi
+app/src/main/res/drawable-xhdpi/__node_modules*
+app/src/main/res/drawable-xhdpi/__components*
+app/src/main/res/drawable-xhdpi/components_*
+app/src/main/res/drawable-xhdpi/node_modules_*
+
+# app/src/main/res/drawable-xxhdpi
+app/src/main/res/drawable-xxhdpi/__node_modules*
+app/src/main/res/drawable-xxhdpi/__components*
+app/src/main/res/drawable-xxhdpi/components_*
+app/src/main/res/drawable-xxhdpi/node_modules_*
+
+# app/src/main/res/drawable-xxxhdpi
+app/src/main/res/drawable-xxxhdpi/__node_modules*
+app/src/main/res/drawable-xxxhdpi/__components*
+app/src/main/res/drawable-xxxhdpi/components_*
+app/src/main/res/drawable-xxxhdpi/node_modules_*

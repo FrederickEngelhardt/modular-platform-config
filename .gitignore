@@ -1,0 +1,18 @@
+# Ignore local and override settings for files
+# src/zsh/**/[__override__,__local__]*.sh
+src/zsh/constructors/__local__*.zsh
+src/zsh/constructors/init.zsh
+src/zsh/constructors/final.zsh
+
+__generated__*.{zsh,sh}
+
+node_modules
+test.sh
+
+.gitignore_global_overrides
+
+shelljs-functions.sh
+
+*.log
+
+libs

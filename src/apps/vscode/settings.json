@@ -1,0 +1,92 @@
+{
+  "editor.fontSize": 18,
+  "terminal.integrated.fontSize": 18,
+  "flow.useNPMPackagedFlow": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "prettier.useTabs": false,
+  "prettier.singleQuote": true,
+  "prettier.requireConfig": false,
+  "prettier.jsxSingleQuote": true,
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": false,
+    // For TSLint
+    "source.fixAll.tslint": false,
+    // For Stylelint
+    "source.fixAll.stylelint": false
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "editor.wordWrap": "on",
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  // Speeds up quickSuggestions
+  "editor.quickSuggestionsDelay": 1,
+  "workbench.editor.enablePreview": false,
+  "emmet.showSuggestionsAsSnippets": false,
+  "editor.snippetSuggestions": "top",
+  "emmet.triggerExpansionOnTab": true,
+  "files.maxMemoryForLargeFilesMB": 4096,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    ".git": true,
+    ".build": true,
+    "**/.DS_Store": true,
+    "build/**/*.js": {
+      "when": "$(basename).ts"
+    }
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  },
+  "java.semanticHighlighting.enabled": true,
+  "explorer.confirmDelete": false,
+  "roku-development.ip": "192.168.1.35",
+  "roku-development.username": "rokudev",
+  "roku-development.password": "p2dev",
+  "roku-development.files": [
+    "source/**/*",
+    "components/**/*",
+    "images/**/*",
+    "manifest"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[tsx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ts]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "dart.checkForSdkUpdates": false,
+  "diffEditor.renderSideBySide": true,
+  "sync.autoDownload": false,
+  "sync.autoUpload": true,
+  "tailwindCSS.emmetCompletions": true,
+  "workbench.panel.defaultLocation": "right",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.allowNoVerifyCommit": true,
+  "jest.autoEnable": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "left",
+  "vsicons.dontShowNewVersionMessage": true,
+  "debug.javascript.autoAttachFilter": "smart",
+  "window.zoomLevel": 1
+}
