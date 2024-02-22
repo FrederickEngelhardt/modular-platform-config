@@ -1,1 +1,14 @@
+CAN_RUN=true
+
+
+if ! [[ -n "$(command -v node)" ]]; then
+    echo "node not detected, please install node by running ./run-setup.zsh at top level of modular-platform-config";
+    exit 1
+fi
+
+[[ ! ../node_modules ]] && {
+    echo "node_modules not installed, running install"
+    npm install;
+}
+
 npx solidarity
