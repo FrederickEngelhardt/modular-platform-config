@@ -1,0 +1,11 @@
+# Anything added here will be inherited by other hosts provided they are defined below
+Host *
+ AddKeysToAgent yes
+ UseKeychain yes
+
+# Host can be anything as long as the Host url is reachable.
+# Host lets you safely alias credentials so multiple credentials can be used for the same url
+# example abc@org.dev could reach github by doing a git clone git@org.dev:TestOrg/testRepo.git
+# This can be accomplished by adding a HostName github.com underneath the Host alias
+# Host vllc.dev
+  # HostName github.com
