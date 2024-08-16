@@ -3,12 +3,13 @@ if ! [[ -n "$(command -v duti)" ]]; then
 fi
 
 # each array contains all matches for default apps to open the file
-extensions=(.zsh .sh .js .jsx .ts .tsx .cjs .mjs .json .json5 .md .txt .java .kt .py .lock .rb .yml .yaml)
+extensions=(.zsh .sh .js .jsx .ts .tsx .cjs .mjs .json .json5 .md .txt .java .kt .py .lock .rb .yml .yaml .xml m3u m3u8 m4d mpd)
 files=(Podfile)
 assets=(.svg)
 
 vscode_id="com.microsoft.VSCode"
 
+# Use duti to set macosx default apps for each extension
 set_vscode_default(){
   echo setup extensions for $vscode_id: ${extensions[*]}
   for val in "${extensions[@]}" 
