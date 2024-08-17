@@ -22,6 +22,7 @@ source $MPC_ZSH_PLUGINS/ansi-colors.zsh
 
 # CLI MPC_ZSH_PLUGINS
 source $MPC_ZSH_PLUGINS/react-native.zsh
+source $MPC_ZSH_PLUGINS/cocoapods/setup.zsh
 source $MPC_ZSH_PLUGINS/node.zsh
 source $MPC_ZSH_PLUGINS/yarn.zsh
 source $MPC_ZSH_PLUGINS/npm.zsh
