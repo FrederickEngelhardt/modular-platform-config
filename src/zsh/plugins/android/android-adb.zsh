@@ -11,58 +11,56 @@ else
     echo 'No DEFAULT_AVD is set, so I will simply pick the first available AVD'
   fi
 
-  export ADB_CURRENT_DEVICES=`adb devices | grep -v devices | grep device | cut -f 1`
+  export ADB_ALL_DEVICES=`adb devices | grep -v devices | grep device | cut -f 1`
   # react-native is 8081 so it defaults to this
   export ADB_DEFAULT_PORT_REVERSE=(8081)
-  export ADB_CURRENT_PORT_REVERSE=()
+  export ADB_REVERSE_ALL_PORTS=()
 
-  adb_update_current_devices(){
-    export ADB_CURRENT_DEVICES=`adb devices | grep -v devices | grep device | cut -f 1`
-    echo "Updated current devices: got ${#ADB_CURRENT_DEVICES[@]} devices"
+  adb_all_update_devices(){
+    export ADB_ALL_DEVICES=`adb devices | grep -v devices | grep device | cut -f 1`
+    echo "Updated current devices: got ${#ADB_ALL_DEVICES[@]} devices"
   }
 
-  adb_current_devices(){
+  adb_all(){
     if (( ${#a[@]} )); then
     else
-      echo "No devices"
+      adb_all_update_devices
     fi
 
-    for device in $ADB_CURRENT_DEVICES; do
+    for device in $ADB_ALL_DEVICES; do
         adb -s $device $@
     done
   }
 
-  adb_update_ports_to_reverse(){
-    echo "Args must be port with spaces"
-    ADB_CURRENT_PORT_REVERSE=($@)
-    echo "Update ports to reverse $ADB_CURRENT_PORT_REVERSE"
-  }
-
-  adb_reverse_all_ports_current_devices(){
-    for device in $ADB_CURRENT_DEVICES; do
-        adb_reverse_all_ports -s $device $@
-    done
+  adb_reverse_update_ports(){
+    ADB_REVERSE_ALL_PORTS=($@)
+    echo "Updated current ports: got ${#ADB_REVERSE_ALL_PORTS[@]} ports"
   }
 
   # single device reverse
   adb_reverse(){
-    adb reverse tcp:$1 tcp:$1
+    adb $@ reverse tcp:$1 tcp:$1
   }
 
   # allows device args
-  adb_reverse_all_ports(){
+  adb_reverse_all(){
     for port in $ADB_DEFAULT_PORT_REVERSE; do
         adb $@ reverse tcp:$port tcp:$port
     done
 
-    for port in $ADB_CURRENT_PORT_REVERSE; do
+    for port in $ADB_REVERSE_ALL_PORTS; do
         adb $@ reverse tcp:$port tcp:$port
     done
   }
 
-  # adb-all aliases
-  alias adb-all=adb_current_devices
-  alias adb-all-reverse=adb_reverse_all_ports
+  adb_all_reverse(){
+    for device in $ADB_ALL_DEVICES; do
+        adb_reverse_all -s $device $@
+    done
+  }
+
+  alias adba=adb_all
+  alias adbar=adb_reverse_all
 
   # Blindly picks the name of the first available virtual device
   function EchoEmulatorFirstAvdName {
