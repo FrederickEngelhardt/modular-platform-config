@@ -41,7 +41,7 @@ Fork and clone if you need to customize this. Otherwise open to PRs if the chang
     - installed-by: `curl`
   - **Java** auto installer for 11 and 17
     - auto installs Java 11 and Java 17 using azul which supports ARM and intel versions for both 11 and 17 avoiding rosetta throttling for apple silicon.
-    - Adds jenv to allow managing and swapping the environment.
+    - Adds jenv to allonaging and swapping the environment.
     - Also supplies a `jdk` alias allowing quick swapping between major versions of java
     - installed-by: `brew`  
 - **aliases** - less typing
